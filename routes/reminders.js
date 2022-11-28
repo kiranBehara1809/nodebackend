@@ -47,8 +47,7 @@ router.post('/delete', (req, res) => {
                 status: 200,
                 msg: 'Deleted Successfully',
                 timeTaken: Math.abs(API_STARTED.getTime() - API_ENDED.getTime()) / 1000,
-                _id: req.body._id,
-                ...updateObject
+                _id: req.body._id
             })
         }
     })

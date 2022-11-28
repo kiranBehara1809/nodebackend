@@ -35,10 +35,7 @@ const NO_DATA_FOUND = {
 }
 
 app.get('/', (req, res) => {
-    res.send({
-        1 : app.routes,
-        2 : router.stack,
-    });
+    res.send("Welcome to my nodejs application");
 })
 
 app.get('/api/welcomeNote', (req, res) => {
